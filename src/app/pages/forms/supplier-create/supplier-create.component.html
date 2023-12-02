@@ -1,0 +1,35 @@
+
+<div class="col-lg-6">
+    <nb-card>
+        <nb-card-header>Cadastro de Fornecedores</nb-card-header>
+        <nb-card-body>
+            <input type="text" nbInput fullWidth placeholder="Nome">
+            <div class="full-name-inputs">
+                <input type="text" nbInput fullWidth placeholder="CNPJ">
+                <input type="text" nbInput fullWidth placeholder="Razão Social">
+            </div>
+
+            <div class="full-name-inputs">
+                <input type="text" nbInput fullWidth placeholder="Endereço">
+                <input type="text" nbInput fullWidth placeholder="Contatos">
+            </div>
+            
+
+            
+            <textarea rows="5" nbInput fullWidth shape="round" placeholder="Serviços"></textarea>
+     
+
+            <div class="demo-items">
+                <nb-radio-group>
+                    <nb-radio [value]="'Ativo'">
+                        Ativo
+                    </nb-radio>
+                    <nb-radio [value]="'Inativo'">
+                        Inativo
+                    </nb-radio>
+
+                </nb-radio-group>
+            </div>
+        </nb-card-body>
+    </nb-card>
+</div>
