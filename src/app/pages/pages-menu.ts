@@ -25,6 +25,22 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Tree Grid',
         link: '/pages/tables/tree-grid',
       },
+      {
+        title: 'Fornecedor',
+        link: '/pages/tables/supplier-table',
+      },
+      {
+        title: 'Pedido',
+        link: '/pages/tables/order-table',
+      },
+      {
+        title: 'Entrega',
+        link: '/pages/tables/receipt-table',
+      },
+      {
+        title: 'Produtos',
+        link: '/pages/tables/product-table',
+      },
     ],
   },
   

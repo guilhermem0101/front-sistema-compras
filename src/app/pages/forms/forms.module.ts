@@ -18,7 +18,7 @@ import { FormInputsComponent } from './form-inputs/form-inputs.component';
 import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { FormsModule as ngFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule as ngFormsModule } from '@angular/forms';
 import { SupplierCreateComponent } from './supplier-create/supplier-create.component';
 import { OrderCreateComponent } from './order-create/order-create.component';
 import { ReceiptCreateComponent } from './receipt-create/receipt-create.component';
@@ -39,6 +39,7 @@ import { ProductCreateComponent } from './product-create/product-create.componen
     NbSelectModule,
     NbIconModule,
     ngFormsModule,
+    ReactiveFormsModule 
   ],
   declarations: [
     FormsComponent,

@@ -4,6 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { TablesComponent } from './tables.component';
 import { SmartTableComponent } from './smart-table/smart-table.component';
 import { TreeGridComponent } from './tree-grid/tree-grid.component';
+import { SupplierComponent } from './supplier/supplier.component';
+import { OrderComponent } from './order/order.component';
+import { ReceiptComponent } from './receipt/receipt.component';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [{
   path: '',
@@ -16,6 +20,22 @@ const routes: Routes = [{
     {
       path: 'tree-grid',
       component: TreeGridComponent,
+    },
+    {
+      path: 'supplier-table',
+      component: SupplierComponent,
+    },
+    {
+      path: 'order-table',
+      component: OrderComponent,
+    },
+    {
+      path: 'receipt-table',
+      component: ReceiptComponent,
+    },
+    {
+      path: 'product-table',
+      component: ProductComponent,
     },
   ],
 }];

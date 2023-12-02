@@ -3,33 +3,33 @@
     <nb-card>
         <nb-card-header>Cadastro de Fornecedores</nb-card-header>
         <nb-card-body>
-            <input type="text" nbInput fullWidth placeholder="Nome">
-            <div class="full-name-inputs">
-                <input type="text" nbInput fullWidth placeholder="CNPJ">
-                <input type="text" nbInput fullWidth placeholder="Razão Social">
-            </div>
+<form [formGroup]="supplierForm" (submit)="onSubmit()">
+    <input formControlName="Nome" type="text" nbInput fullWidth placeholder="Nome">
+    <input formControlName="CNPJ" type="text" nbInput fullWidth placeholder="CNPJ">
+    <input formControlName="razao_social" type="text" nbInput fullWidth placeholder="Razão Social">
 
-            <div class="full-name-inputs">
-                <input type="text" nbInput fullWidth placeholder="Endereço">
-                <input type="text" nbInput fullWidth placeholder="Contatos">
-            </div>
+    <!-- <div formArrayName="endereco" *ngFor="let endereco of supplierForm.get('endereco').controls; let i = index">
+        <div [formGroupName]="i">
+            <input formControlName="logradouro" type="text" nbInput fullWidth placeholder="Endereço">
+           
+        </div>
+    </div> -->
+
+    <!-- <div formArrayName="contatos" *ngFor="let contato of supplierForm.get('contatos').controls; let i = index">
+        <div [formGroupName]="i">
+            <input formControlName="dd" type="text" nbInput fullWidth placeholder="DD">
+           
+        </div>
+    </div> -->
+
+    <textarea formControlName="servico" rows="5" nbInput fullWidth shape="round" placeholder="Serviços"></textarea>
+
+    <!-- Add other form controls here -->
+
+    <button type="submit">Submit</button>
+</form>
+
             
-
-            
-            <textarea rows="5" nbInput fullWidth shape="round" placeholder="Serviços"></textarea>
-     
-
-            <div class="demo-items">
-                <nb-radio-group>
-                    <nb-radio [value]="'Ativo'">
-                        Ativo
-                    </nb-radio>
-                    <nb-radio [value]="'Inativo'">
-                        Inativo
-                    </nb-radio>
-
-                </nb-radio-group>
-            </div>
         </nb-card-body>
     </nb-card>
 </div>
