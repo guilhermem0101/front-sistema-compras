@@ -12,12 +12,10 @@ export class ECommerceComponent implements OnInit {
   constructor(private supplierService: SupplierService) { }
 
   ngOnInit() {
-    this.getSuppliers();
+    
   }
 
   PedidosByForn: string = this.api + "/receipts/counts_by_supplier"
-
-  getSuppliers(): void {
-    this.supplierService.getSuppliers().subscribe(suppliers => this.suppliers = suppliers);
-  }
+  PrazoMedioByForn: string = this.api + "/orders/avg_by_supplier"
+  
 }
