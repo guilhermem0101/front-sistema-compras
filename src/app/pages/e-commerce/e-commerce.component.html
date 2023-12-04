@@ -1,18 +1,78 @@
 
 
-
 <div class="row">
   <div class="col-xxl-6">
-  <img mat-card-image img [src]="PedidosByForn" alt="Produtos com mais vendas">
+    <img img [src]="dash" alt="dashboard">
   </div>
 
-  <div class="col-xxl-6">
-    <img mat-card-image img [src]="PrazoMedioByForn" alt="Produtos com mais vendas">
-  </div>
+  <!-- <div class="col-xxl-6">
+    <img  img [src]="prazoMedioByForn" alt="Produtos com mais vendas">
+  </div> -->
 </div>
 
 
-<div class="row">
+
+<!-- 
+
+  <div class="col-md-12 col-lg-6">
+
+    <nb-card size="small">
+      <nb-tabset>
+        <nb-tab tabTitle="Simple Tab #1">
+          <img img [src]="pedidosByForn" alt="Produtos com mais vendas">
+        </nb-tab>
+        <nb-tab tabTitle="Simple Tab #2">
+          <img img [src]="prazoMedioByForn" alt="Produtos com mais vendas">
+        </nb-tab>
+        <nb-tab tabTitle="Simple Tab #3">
+          <span>Content #3</span>
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div> -->
+
+
+
+
+
+
+
+<!-- 
+<div class="col-md-12 col-lg-6">
+  <nb-card size="small">
+    <nb-tabset>
+      <nb-tab tabTitle="Simple Tab #1" (select)="selectedTab = 'tab1'">
+        <img *ngIf="selectedTab === 'tab1'" [src]="pedidosByForn" alt="Produtos com mais vendas">
+      </nb-tab>
+      <nb-tab tabTitle="Simple Tab #2" (select)="selectedTab = 'tab2'">
+        <img *ngIf="selectedTab === 'tab2'" [src]="prazoMedioByForn" alt="Produtos com mais vendas">
+      </nb-tab>
+      <nb-tab tabTitle="Simple Tab #3">
+        <span>Content #3</span>
+      </nb-tab>
+    </nb-tabset>
+  </nb-card>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
   <div class="col-xxl-6">
     <div class="row">
       <div class="col-md-6">
@@ -49,4 +109,4 @@
   <div class="col-xxl-3">
     <ngx-user-activity></ngx-user-activity>
   </div>
-</div>
+</div> -->

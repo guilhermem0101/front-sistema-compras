@@ -1,1 +1,25 @@
-<p>order-create works!</p>
+<div class="col-lg-12">
+    <nb-card>
+        <nb-card-header>Cadastro de Pedidos</nb-card-header>
+        <nb-card-body>
+            <form [formGroup]="orderForm" (submit)="onSubmit()">
+                
+
+      
+                    <nb-card>
+                        <nb-card-header>Select Product</nb-card-header>
+                        <nb-card-body>
+                            <nb-select formControlName="product" nbInput fullWidth shape="round">
+                            <nb-option *ngFor="let product of products" [value]="product.id_produto">{{ product.nome }}</nb-option>
+                            </nb-select>
+                        </nb-card-body>
+                    </nb-card>
+
+
+                <button type="submit">Criar</button>
+            </form>
+
+
+        </nb-card-body>
+    </nb-card>
+</div>
